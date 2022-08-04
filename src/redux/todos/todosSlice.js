@@ -46,7 +46,7 @@ export const todosSlice = createSlice({
         isAddLoading: false,
         error: null,
         errorAdd: null,
-        activeFilter: 'all',
+        activeFilter: localStorage.getItem('activeFilter'),
     },
     reducers: {
         addNew: {
